@@ -1,0 +1,29 @@
+Format: 1.8
+Date: Tue, 23 Mar 2010 16:17:17 +0000
+Source: rsync
+Binary: rsync
+Architecture: source amd64
+Version: 3.0.7-2+racklabs1
+Distribution: lucid
+Urgency: low
+Maintainer: Paul Slootman <paul@debian.org>
+Changed-By: <mshuler@swift2.racklabs.com>
+Description: 
+ rsync      - fast remote file copy program (like rcp)
+Changes: 
+ rsync (3.0.7-2+racklabs1) lucid; urgency=low
+ .
+   * patched to disable name lookups
+     - debian/patches/disable-lookup_name-hack.diff
+Checksums-Sha1: 
+ ffc7211ccd671b3eaa9678fe461f034d21cf32d5 743 rsync_3.0.7-2+racklabs1.dsc
+ 04c87df530a0f28d4d24fe8590294a54b4d9fff5 19861 rsync_3.0.7-2+racklabs1.diff.gz
+ 54e141a3c36485766d89a7d1435669f703ccc1cc 361126 rsync_3.0.7-2+racklabs1_amd64.deb
+Checksums-Sha256: 
+ 02b10244ead53b723ea08745d464767a7deeeacfc547750f27e0dbd00cc4654b 743 rsync_3.0.7-2+racklabs1.dsc
+ 7c1c90e6761cdd1d7836d9dde6b6f7f021f45c4a792209d04e9daa978628d83a 19861 rsync_3.0.7-2+racklabs1.diff.gz
+ 0d61f0daf50dd887f2ae6942768d88b0c1ae0836fe5bd59015373aa5f0921831 361126 rsync_3.0.7-2+racklabs1_amd64.deb
+Files: 
+ cbf15587113cd98823af5d8da7be05f3 743 net optional rsync_3.0.7-2+racklabs1.dsc
+ 79462d64b2f48aa48888e843e258ae56 19861 net optional rsync_3.0.7-2+racklabs1.diff.gz
+ f4904832d90685acead0cfe4ef481183 361126 net optional rsync_3.0.7-2+racklabs1_amd64.deb
