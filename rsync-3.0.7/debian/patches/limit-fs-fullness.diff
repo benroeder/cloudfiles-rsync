@@ -8,15 +8,16 @@
  #include "rsync.h"
  
  extern int verbose;
-@@ -689,6 +690,23 @@ int recv_files(int f_in, char *local_name)
+@@ -689,6 +690,24 @@ int recv_files(int f_in, char *local_name)
  					       dflt_perms, exists);
  		}
  
 +		struct statvfs fsbuf;
++		unsigned long reserve = 5L * 1024 * 1024 * 1024;
 +		if (statvfs(file->dirname, &fsbuf) == 0)
 +		{
 +			off_t used = (fsbuf.f_blocks - fsbuf.f_bfree) * fsbuf.f_frsize;
-+			off_t limit = fsbuf.f_blocks * fsbuf.f_frsize * 98 / 100;
++			off_t limit = fsbuf.f_blocks * fsbuf.f_frsize - reserve;
 +			if ((used + F_LENGTH(file)) > limit)
 +			{
 +				rprintf(FERROR, "Filesystem too full for new files!");

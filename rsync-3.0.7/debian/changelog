@@ -1,3 +1,9 @@
+rsync (3.0.7-2+racklabs3) lucid; urgency=low
+
+  * Changed fullness limit to 5G reserve.
+
+ --  <gholt@rackspace.com>  Thu, 24 Jan 2013 20:24:00 +0000
+
 rsync (3.0.7-2+racklabs2) lucid; urgency=low
 
   * Limit destination drive fullness
