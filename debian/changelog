@@ -1,3 +1,9 @@
+rsync (3.0.9+racklabs1) lucid; urgency=low
+
+  * Patch to limit destination drive fullness
+
+ -- Gregory Holt <gholt@rackspace.com>  Tue, 29 Jan 2013 19:41:00 +0000
+
 rsync (3.0.9) lucid; urgency=low
 
   * Adding for lucid build.
