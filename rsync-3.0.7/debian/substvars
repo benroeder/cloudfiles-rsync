@@ -1,1 +1,0 @@
-shlibs:Depends=libacl1 (>= 2.2.11-1), libc6 (>= 2.8), libpopt0 (>= 1.15)
